@@ -13,9 +13,10 @@ function task2(S) {
       }
       if (
         j === letArr.length &&
-        !flag.includes(letArr[i]) && //AaA it ignored the first one but should be invalid
-        !count.includes(letArr[i]) && // aAA no repeat
-        lowArr.indexOf(lowArr[i]) !== i //G no small before that
+        !flag.includes(letArr[i]) && //AaA it ignored the first letter
+        !count.includes(letArr[i]) && // aAA it considered repeated letter
+        letArr.indexOf(lowArr[i]) !== i && // To make sure that small letter came before
+        letArr.indexOf(lowArr[i]) !== -1 // if there wasn't any small return -1
       ) {
         count.push(letArr[i]);
       } else {
@@ -33,3 +34,5 @@ console.log(task2("aAaA")); //0
 console.log(task2("aaAbcCABBc")); //2
 console.log(task2("xyzXYZabcABC")); //6
 console.log(task2("ABCabcAefG")); //0
+console.log(task2("aAaa")); //0
+console.log(task2("ominmjjooIHIIGMGMHML")); // 2 MI

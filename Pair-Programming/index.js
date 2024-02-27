@@ -1,5 +1,6 @@
 //["axbcfssfg","axzsdsfaf","bc"] ""
 
+// Time complexity
 // function test(arr) {
 //   for (let i = 0; i < arr.length - 1; i++) {
 //     arr[0] = find(arr[i], arr[i + 1]);
@@ -18,6 +19,7 @@
 //   return result;
 // }
 
+// Space complexity (because of jumping, It uses more cache)
 function test(arr) {
   if (!arr.length || !arr[0].length) {
     return "";

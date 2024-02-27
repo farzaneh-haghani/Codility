@@ -39,3 +39,4 @@ console.log(task2("aAaA")); //0
 console.log(task2("aaAbcCABBc")); //2
 console.log(task2("xyzXYZabcABC")); //6
 console.log(task2("ABCabcAefG")); //0
+console.log(task2("aAaa")); //0

@@ -1,5 +1,5 @@
 function task2(S) {
-  let statusObj = {};
+  const statusObj = {};
   let count = 0;
 
   for (let i = 0; i < S.length; i++) {
